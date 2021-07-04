@@ -1,0 +1,5 @@
+pandas==1.1.5
+streamlit==0.62.1
+xlrd==2.0.1
+openpyxl==3.0.7
+pandasql==0.7.3
