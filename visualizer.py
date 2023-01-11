@@ -5,6 +5,7 @@ import streamlit as st
 import os
 from io import StringIO
 
+'''
 test_file = st.file_uploader("Select File", type=None, accept_multiple_files=False, key=None, help=None, on_change=None, disabled=False, label_visibility="visible")
 if test_file is not None:
     # To read file as bytes:
@@ -16,7 +17,7 @@ if test_file is not None:
     # To read file as string:
     string_data = stringio.read()
     st.write(string_data)
-
+'''
 getFileType = ""
 def file_selector(folder_path='./sample-files'):
     FileType = ['Text','CSV','Excel']
