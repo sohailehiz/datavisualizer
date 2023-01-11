@@ -7,7 +7,7 @@ import os
 test_file = st.file_uploader("Select File", type=None, accept_multiple_files=False, key=None, help=None, on_change=None, disabled=False, label_visibility="visible")
 if test_file is not None:
     # To read file as bytes:
-    bytes_data = uploaded_file.getvalue()
+    bytes_data = test_file.getvalue()
     st.write(test_file)
 
 getFileType = ""
