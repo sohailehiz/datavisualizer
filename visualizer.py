@@ -9,6 +9,12 @@ if test_file is not None:
     # To read file as bytes:
     bytes_data = test_file.getvalue()
     st.write(test_file)
+    # To convert to a string based IO:
+    stringio = StringIO(test_file.getvalue().decode("utf-8"))
+    st.write(stringio)
+    # To read file as string:
+    string_data = stringio.read()
+    st.write(string_data)
 
 getFileType = ""
 def file_selector(folder_path='./sample-files'):
