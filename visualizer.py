@@ -4,6 +4,8 @@ from pandasql import sqldf
 import streamlit as st
 import os
 
+test_file = st.file_uploader("Select File", type=None, accept_multiple_files=False, key=None, help=None label_visibility="visible")
+st.write(test_file)
 getFileType = ""
 def file_selector(folder_path='./sample-files'):
     FileType = ['Text','CSV','Excel']
